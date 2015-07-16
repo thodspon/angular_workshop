@@ -1,0 +1,38 @@
+<html ng-app="app">
+
+<head>
+    <title>Directive-class</title>
+    <!--เพิ่ม Css-->
+    <link rel="stylesheet" href="./css/11_ng-class.css"/>
+    <!-- 1. require angular  -->
+    <script src="../vendor/angular/angular.js"></script>
+    <!--2. เพื่ม .controller-->
+    <script src="./js/11_ng-class.js"></script>
+
+</head>
+
+<body>
+<div ng-controller="ng-classCtrl">
+    <h2>ทดสอบ การ ส่งclass เพื่อเปลี่ยนค่า</h2>
+    <hr/>
+    <label for="">class ที่กำหนด</label>
+    <ul>
+        <li ng-repeat="n in className ">
+            {{ n }}
+        </li> <!--loop for repeat ตัวใหญ่ | uppercase  ตัวค้นหา filter:ตามด้วยตัวแปร-->
+    </ul>
+    <input type="text" ng-model="myClass" placeholder="class...">
+    <br/>
+    <br/>
+    <button ng-class="myClass">Welcome AngularJS</button>
+    <!-- ng-class="{ class: exp }" -->
+    <br/>
+    <br/>
+    <hr/>
+    <button ng-class="{ 'red': danger }" ng-click="clearClass()">
+        Class with expression
+    </button>
+</div>
+</body>
+
+</html>

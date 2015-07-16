@@ -1,0 +1,41 @@
+<html ng-app="app">
+
+<head>
+    <title>Directive</title>
+    <!-- 1. require angular  -->
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="./js/8_ng-repeatCtrl.js"></script>
+</head>
+
+<body>
+<div ng-controller="Ng-repeatCtrl">
+    <h2>ส่งค่า จาก controller มายัง ng-controller="Ng-repeatCtrl"</h2>
+    <hr/>
+
+    <ul>
+        <li ng-repeat="n in nodejs">{{ n }}</li>
+    </ul>
+    <hr/>
+
+    <!-- Array with object -->
+    <input type="text" ng-model="query" placeholder="Search...">
+    <table border="1">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="N in Nodejsroiet | filter: query">
+            <td>{{ $index + 1 }}</td>
+            <td>{{ N.name | uppercase}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr/>
+
+</div>
+</body>
+
+</html>

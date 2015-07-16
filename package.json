@@ -1,0 +1,19 @@
+{
+  "name": "angular_workshop",
+  "version": "1.0.0",
+  "description": "-ติดตั้ง http เพื่อ run 127.0.0.1:8080\r -โดย ติดตั้ง ตามคำสั่ง\r -npm install -g bower\r -npm install -g http-server\r -ตืดตั้ง เรียบร้อย\r -hs หรือ hs -p 8080\r -127.0.0.1:8080\r -รัน web browser 127.0.0.1:8080",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thodspon/angular_workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thodspon/angular_workshop/issues"
+  },
+  "homepage": "https://github.com/thodspon/angular_workshop"
+}

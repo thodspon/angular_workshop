@@ -1,0 +1,22 @@
+<html ng-app="app">
+
+<head>
+    <title>Routing</title>
+    <!-- 1. require angular  -->
+    <script src="../vendor/angular/angular.js"></script>
+
+    <script src="./js/19_fatoryCtrl.js"></script>
+</head>
+
+<body>
+<h1>My Application</h1>
+<h3>fatory รับค่า จาก text ไปยัง controller</h3>
+<div ng-controller="fatoryCtrl">
+    <input type="text" ng-model="firstName">
+    <input type="text" ng-model="lastName">
+    <button ng-click="showName()">Show fullname</button>
+</div>
+<div ng-include="'./include/footer.html'"></div>
+</body>
+
+</html>

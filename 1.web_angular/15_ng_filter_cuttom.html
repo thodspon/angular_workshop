@@ -1,0 +1,35 @@
+<html ng-app="app">
+
+<head>
+    <title>Directive</title>
+    <!-- 1. require angular  -->
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="js/15_filter-custom.js"></script>
+</head>
+
+<body>
+
+<div ng-controller="ng-filterCtrl">
+    <h2>สร้าง filter สำหรับ บอก เพศ 1=ชาย 2=หญิง</h2>
+    <hr/>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Sex</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="p in people">
+            <td>{{ p.name }}</td>
+            <td>{{ p.sex | sexName }}</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr/>
+</div>
+
+
+</body>
+
+</html>

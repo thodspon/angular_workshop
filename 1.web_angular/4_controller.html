@@ -1,0 +1,61 @@
+<html ng-app="App"> <!--ประกาศใช้-->
+
+<head>
+    <title>Hello Controller</title>
+    <!-- 1. require angular  -->
+    <script src="../vendor/angular/angular.js"></script>
+</head>
+
+<body> <!--เรียกใช้-->
+<div ng-controller="MainCtrl">      <h1>    Hello <<>> {{ name }}</h1>   </div>
+<div ng-controller="SecondCtrl">    <h1>    Hello <<>> {{ name }}</h1>   </div>
+<div ng-controller="ThreeCtrl">     <h1>    Hello <<>> {{ name }}</h1>   </div>
+<!-- ng cilck alert-->
+<button ng-controller="MainCtrl" ng-click="showName()">Show MainCtrl </button>
+<button ng-controller="SecondCtrl" ng-click="showName()">Show SecondCtrl </button>
+<button ng-controller="ThreeCtrl" ng-click="showName()">Show ThreeCtrl </button>
+
+
+<script>
+    /*            angular.module('App',[])
+     .controller()
+     .filter()
+     .directive()
+
+     angular.module('App2',[])
+     .controller()
+     .filter()
+     .directive()
+
+
+     var App = angular.module('App',[])
+     App.controller();
+     App.filter();*/
+
+    angular.module('App',[])
+            .controller('MainCtrl',function($scope){
+                $scope.name ='NodeJS';
+                $scope.showName = function(){
+                    alert('NodeJS');
+                }
+            })
+            .controller('SecondCtrl',function($scope){
+                $scope.name ='Anguler';
+                $scope.showName = function(){
+                    alert($scope.name);
+                }
+
+            })
+            .controller('ThreeCtrl',function($scope){
+                $scope.name ="HTML5";
+                $scope.showName = function (){
+                    alert($scope.name+' '+'Thodspon')
+                }
+
+            })
+
+
+</script>
+</body>
+
+</html>

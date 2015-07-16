@@ -1,0 +1,24 @@
+<html ng-app="app">
+
+<head>
+    <title>Directive</title>
+    <!-- 1. require angular  -->
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="js/10_ng-hide-show.js"></script>
+</head>
+
+<body>
+<div ng-controller="ng-hide-showCtrl">
+    <h2>การใช้งาน กด เพื่อแสดงค่า ต่างๆ</h2>
+    <button style="background-color: #1D24FF;" ng-show="isShow">Welcome TO AngularJS</button>
+    <hr/>
+    <button ng-click="hide()">Hide()</button>
+    <button ng-click="show()">Show()</button>
+    <button ng-click="toggle()">Toggle()</button>
+    <hr/>
+</div>
+
+
+</body>
+
+</html>

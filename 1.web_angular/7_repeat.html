@@ -1,0 +1,40 @@
+<html ng-app="App"> <!--ประกาศใช้-->
+
+<head>
+    <title>Hello world</title>
+    <!-- 1. require angular  -->
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="./js/7_repeatCtrl.js"></script>
+</head>
+
+<body>
+
+<div ng-controller="MainCtrl">
+    <h2>การทำงานของ repeat และค้นหาข้อมูลใน loop </h2>
+    <hr/>
+    <labal> INPUT Search Local::</labal>
+    <input id="1" type=" text" size="10" ng-model="query"/>
+    <ul>
+        <li ng-repeat="n in name | filter:query">
+            {{ n | uppercase }}
+        </li> <!--loop for repeat ตัวใหญ่ | uppercase  ตัวค้นหา filter:ตามด้วยตัวแปร-->
+    </ul>
+    <hr/>
+    <br>
+    <labal> INPUT Search Qurey2::</labal>
+    <input id="2" type=" text" size="10" ng-model="query1"/>
+    <ul>
+        <li ng-repeat="n in name1 | filter:query1">
+            {{ n.id }} - {{n.name | lowercase }}
+        </li> <!--ต่อตัวแปร ไปเรื่อยๆ-->
+    </ul>
+    <hr/>
+</div>
+footer
+</body>
+
+
+
+
+
+</html>

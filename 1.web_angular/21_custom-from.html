@@ -1,0 +1,38 @@
+<html ng-app="app">
+
+<head>
+    <title>Hello custom-from</title>
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="./js/21_custom-fromCtrl.js"></script>
+
+</head>
+
+<body>
+<div ng-controller="WelcomeCtrl">
+    <h3>Custom From and Set From</h3>
+    <hr/>
+    <select ng-model="selectedItem"
+            ng-options="f.name for f in fruits track by f.name">
+    </select>
+
+    Selected: {{selectedItem}}
+
+    <br>
+    <input type="checkbox" ng-model="chkMe"> Click Me.
+    Checked: {{chkMe}}
+    <br>
+    <input type="radio" name="rd" ng-value="1" ng-model="rd">Man
+    <input type="radio" name="rd" ng-value="2" ng-model="rd">Woman
+    Checked: {{ rd }}
+    <br>
+    <input type="range" min="10" max="100" ng-model="scale">
+    Range: {{scale}}
+
+    <br>
+    <button ng-click="setData()">Set data</button>
+</div>
+
+<div ng-include="'./include/footer.html'"></div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<html ng-app="app">
+
+<head>
+    <title>Routing</title>
+    <!-- 1. require angular  -->
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="../vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="./js/18_router-controllerCtrl.js"></script>
+</head>
+
+<body>
+<h1>My Application</h1>
+<h3>การทำงาน Routing ส่งค่า ต่างๆ</h3>
+<a href="#/">Main</a> |
+<a ui-sref="about-info">Info</a> |
+<a ui-sref="body">Body</a> |
+<a ui-sref="about-contact">Contact</a>
+
+<hr>
+<div ui-view></div>
+
+<!--ng include เพื่อ เอา file มาแสดง-->
+<div ng-include="'./include/footer.html'"></div>
+</body>
+
+</html>

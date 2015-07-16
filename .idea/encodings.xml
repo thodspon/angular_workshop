@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/.bowerrc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1.web_angular/include/footer.html" charset="x-windows-874" />
+    <file url="file://$PROJECT_DIR$/1.web_angular/include/header.html" charset="x-windows-874" />
+    <file url="file://$PROJECT_DIR$/1.web_angular/templates/body.html" charset="x-windows-874" />
+    <file url="file://$PROJECT_DIR$/1.web_angular/templates/contact.html" charset="x-windows-874" />
+    <file url="file://$PROJECT_DIR$/1.web_angular/templates/info.html" charset="x-windows-874" />
+    <file url="file://$PROJECT_DIR$/1.web_angular/templates/info2.html" charset="x-windows-874" />
+    <file url="file://$PROJECT_DIR$/1.web_angular/templates/main.html" charset="x-windows-874" />
+    <file url="file://$PROJECT_DIR$/1.web_angular/templates/main2.html" charset="x-windows-874" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

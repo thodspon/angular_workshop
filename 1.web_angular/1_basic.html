@@ -1,0 +1,33 @@
+<html ng-app>
+
+<head>
+    <title>Hello world</title>
+    <!-- 1. require angular  -->
+    <script src="../vendor/angular/angular.js"></script>
+</head>
+
+<body>
+<div>
+    <h2>ความสามารถของ angular</h2>
+    <hr/>
+    <label for="">Your name: </label>
+    <!-- Binding data -->
+    <input type="text" ng-model="Name" size="20">
+    +
+    <input type="text" ng-model="Name2" size="20">
+    <br>
+    <label for="">Your SUM: </label>
+    <input type="number" ng-model="A" size="20">
+    +
+    <input type="number" ng-model="B" size="20">
+    <br>
+    <hr/>
+    <!-- Binding data -->
+    <!--<span>{{ name }}</span>-->
+    <span>pname+lname = {{Name+" "+ Name2}}</span> <br>
+    <span>input int+ input int= {{A+B}}</span>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<html ng-app="app">
+
+<head>
+    <title>Routing</title>
+    <!-- 1. require angular  -->
+    <script src="../vendor/angular/angular.js"></script>
+    <!-- 1. require angular  ui router -->
+    <script src="../vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="./js/17_routerCtrl.js"></script>
+</head>
+
+<body>
+<h1>My Application</h1>
+<h3>การทำงาน Routing ในการส่งลิงค์ไปยัง ไฟล์อื่น แต่อยู่ใน หน้า Main.html</h3>
+<a href="#/">Main</a> |
+<a ui-sref="about-info">Info</a> |
+<a ui-sref="body">Body</a> |
+<a ui-sref="about-contact">Contact</a>
+
+<hr>
+<!--ห้ามลืม ui-view-->
+<div ui-view></div>
+<!--ng include เพื่อ เอา file มาแสดง-->
+<div ng-include="'./include/footer.html'"></div>
+
+
+</body>
+
+</html>

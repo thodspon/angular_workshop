@@ -1,0 +1,26 @@
+<html ng-app="app">
+
+<head>
+    <title>Hello ajex</title>
+    <!-- 1. require angular  -->
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="./js/20_ajexCtrl.js"></script>
+</head>
+
+<body>
+<div ng-controller="WelcomeCtrl">
+    <h3>ดึง Jsonfile มาแสดงเป็น ajex</h3>
+    <button ng-click="getUser()">Get users</button>
+    <br/>
+    <span ng-show="isLoading">Loading...</span>
+    <hr/>
+    <ul>
+        <span ng-show="name">{{name}}</span>
+        <li ng-repeat="u in users">{{ u.name }} - {{ u.email }}</li>
+    </ul>
+</div>
+<div ng-include="'./include/footer.html'"></div>
+
+</body>
+
+</html>

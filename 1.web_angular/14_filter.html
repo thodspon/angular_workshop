@@ -1,0 +1,25 @@
+<html ng-app="app">
+
+<head>
+    <title>fiters</title>
+    <!-- 1. require angular  -->
+    <script src="../vendor/angular/angular.js"></script>
+
+    <script src="./js/14_filter.js"></script>
+</head>
+
+<body>
+<div ng-controller="filterCtrl">
+    <h2>filter ค่า โดยการกำหนด |uppercase/lowercase/currency/orderBy/filter  </h2>
+    <hr/>
+    <ul>
+        <!-- uppercase/lowercase/currency/orderBy/filter -->
+        <!-- orderBy for object only -->
+        <li ng-repeat="n in Nodejsroiet">{{ n | uppercase }}</li>
+    </ul>
+    <hr/>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+Install angular-ui-router
+    cmd
+    # bower install angular-ui-router --save
