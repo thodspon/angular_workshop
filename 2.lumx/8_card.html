@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LumX Template Test</title>
+
+    <link href="../vendor/lumx/dist/lumx.css" rel="stylesheet">
+    <link href="../vendor/mdi/css/materialdesignicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+    <script src="../vendor/jquery/dist/jquery.js"></script>
+    <script src="../vendor/velocity/velocity.js"></script>
+    <script src="../vendor/moment/min/moment-with-locales.js"></script>
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="../vendor/lumx/dist/lumx.js"></script>
+
+</head>
+<body ng-app="app">
+
+<div class="card p+"  >
+    <h1>Card </h1>
+
+
+<div flex-container="row" flex-gutter="24">
+    <div flex-item>
+        <div class="card">
+            <div class="card__img card__img--top">
+                <img src="http://1.179.174.66/cockpit101/image101/data1/images/image3.jpg">
+                <span class="fs-headline tc-white-1 display-block">Lorem Ipsum</span>
+            </div>
+
+            <div class="p+">
+                <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+
+                <div class="paragraph fs-body-1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia malesuada.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat" lx-ripple>Share</button>
+                <button class="btn btn--m btn--orange btn--flat" lx-ripple>Learn more</button>
+            </div>
+        </div>
+    </div>
+
+    <div flex-item>
+        <div class="card">
+            <div class="p+">
+                <strong class="fs-headline display-block">Lorem Ipsum</strong>
+                <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+
+                <div class="paragraph fs-body-1 mt+">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia malesuada.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat" lx-ripple>Yes</button>
+                <button class="btn btn--m btn--orange btn--flat" lx-ripple>No</button>
+            </div>
+        </div>
+    </div>
+
+    <div flex-item>
+        <div class="card">
+            <div flex-container="row">
+                <div class="card__img card__img--left" style="height: 160px">
+                    <img src="http://1.179.174.66/cockpit101/image101/data1/images/image4.jpg">
+                </div>
+
+                <div flex-item flex-container="column">
+                    <div flex-item>
+                        <div class="p+">
+                            <strong class="fs-headline display-block">Lorem Ipsum</strong>
+                            <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+                        </div>
+                    </div>
+
+                    <div class="card__actions">
+                        <button class="btn btn--m btn--black btn--flat" lx-ripple>Free sample</button>
+                        <button class="btn btn--m btn--orange btn--flat" lx-ripple>Review</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Main angular module
+    angular.module('app', ['lumx']);
+
+</script>
+</body>
+</html>

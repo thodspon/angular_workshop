@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LumX Template Test</title>
+
+    <link href="../vendor/lumx/dist/lumx.css" rel="stylesheet">
+    <link href="../vendor/mdi/css/materialdesignicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+    <script src="../vendor/jquery/dist/jquery.js"></script>
+    <script src="../vendor/velocity/velocity.js"></script>
+    <script src="../vendor/moment/min/moment-with-locales.js"></script>
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="../vendor/lumx/dist/lumx.js"></script>
+
+</head>
+<body ng-app="app">
+
+<div class="card p+" flex-container="column" flex-align="space-between center" style="height: 500px" >
+    <h1>Floating action </h1>
+    <div>
+        <!-- Up direction -->
+        <div class="fab">
+            <button class="fab__primary btn btn--xl btn--blue btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="left">
+                <i class="mdi mdi-android"></i>
+                <i class="mdi mdi-plus"></i>
+            </button>
+
+            <div class="fab__actions fab__actions--up">
+                <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="left"><i class="mdi mdi-delete"></i></button>
+                <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="left"><i class="mdi mdi-package"></i></button>
+                <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="left"><i class="mdi mdi-pencil"></i></button>
+            </div>
+        </div>
+
+        <!-- Down direction -->
+        <div class="fab ml">
+            <button class="fab__primary btn btn--xl btn--green btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="right">
+                <i class="mdi mdi-android"></i>
+                <i class="mdi mdi-plus"></i>
+            </button>
+
+            <div class="fab__actions fab__actions--down">
+                <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="right"><i class="mdi mdi-pencil"></i></button>
+                <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="right"><i class="mdi mdi-package"></i></button>
+                <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="right"><i class="mdi mdi-delete"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt">
+        <!-- Left direction -->
+        <div class="fab">
+            <button class="fab__primary btn btn--xl btn--red btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="top">
+                <i class="mdi mdi-android"></i>
+                <i class="mdi mdi-plus"></i>
+            </button>
+
+            <div class="fab__actions fab__actions--left">
+                <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="top"><i class="mdi mdi-delete"></i></button>
+                <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="top"><i class="mdi mdi-package"></i></button>
+                <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="top"><i class="mdi mdi-pencil"></i></button>
+            </div>
+        </div>
+
+        <!-- Right direction -->
+        <div class="fab ml">
+            <button class="fab__primary btn btn--xl btn--indigo btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="bottom">
+                <i class="mdi mdi-android"></i>
+                <i class="mdi mdi-plus"></i>
+            </button>
+
+            <div class="fab__actions fab__actions--right">
+                <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="bottom"><i class="mdi mdi-pencil"></i></button>
+                <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="bottom"><i class="mdi mdi-package"></i></button>
+                <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="bottom"><i class="mdi mdi-delete"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // Main angular module
+    angular.module('app', ['lumx']);
+
+</script>
+</body>
+</html>

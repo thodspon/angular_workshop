@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LumX Template Test</title>
+
+    <link href="../vendor/lumx/dist/lumx.css" rel="stylesheet">
+    <link href="../vendor/mdi/css/materialdesignicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+    <script src="../vendor/jquery/dist/jquery.js"></script>
+    <script src="../vendor/velocity/velocity.js"></script>
+    <script src="../vendor/moment/min/moment-with-locales.js"></script>
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="../vendor/lumx/dist/lumx.js"></script>
+
+</head>
+<body ng-app="app">
+
+<div class="card p+"  >
+    <h1>Icon </h1>
+
+    <i class="mdi mdi-account"></i>
+    <i class="mdi mdi-alarm"></i>
+    <i class="mdi mdi-android"></i>
+
+
+    <!-- Circled icons -->
+    <div>
+        <i class="icon icon--xs icon--grey icon--circled mdi mdi-facebook"></i>
+        <i class="icon icon--s icon--blue icon--circled mdi mdi-format-indent-decrease"></i>
+        <i class="icon icon--m icon--green icon--circled mdi mdi-xbox"></i>
+        <i class="icon icon--l icon--red icon--circled mdi mdi-timer"></i>
+        <i class="icon icon--xl icon--purple icon--circled mdi mdi-google"></i>
+    </div>
+
+    <!-- Flat icons -->
+    <div class="mt">
+        <i class="icon icon--xs icon--grey icon--flat mdi mdi-email"></i>
+        <i class="icon icon--s icon--blue icon--flat mdi mdi-battery"></i>
+        <i class="icon icon--m icon--green icon--flat mdi mdi-arrow-left-bold-circle"></i>
+        <i class="icon icon--l icon--red icon--flat mdi mdi-onedrive"></i>
+        <i class="icon icon--xl icon--purple icon--flat mdi mdi-account-box"></i>
+        <i class="icon icon--xl icon--purple icon--flat mdi mdi-office"></i>
+
+    </div>
+
+
+</div>
+<script>
+    // Main angular module
+    angular.module('app', ['lumx']);
+
+</script>
+</body>
+</html>

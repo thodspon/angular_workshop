@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LumX Template Test</title>
+
+    <link href="../vendor/lumx/dist/lumx.css" rel="stylesheet">
+    <link href="../vendor/mdi/css/materialdesignicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+    <script src="../vendor/jquery/dist/jquery.js"></script>
+    <script src="../vendor/velocity/velocity.js"></script>
+    <script src="../vendor/moment/min/moment-with-locales.js"></script>
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="../vendor/lumx/dist/lumx.js"></script>
+
+</head>
+<body ng-app="app">
+
+<div class="card p+"  >
+    <h1>Table </h1>
+<div class="data-table-container">
+    <header class="data-table-header">
+        <div class="data-table-header__label">
+            <span class="fs-title">Lorem Ipsum</span>
+        </div>
+
+        <div class="data-table-header__actions">
+            <button class="btn btn--l btn--black btn--icon" lx-ripple>
+                <i class="mdi mdi-filter-variant"></i>
+            </button>
+
+            <lx-dropdown position="right" over-toggle="true">
+                <button class="btn btn--l btn--black btn--icon" lx-ripple lx-dropdown-toggle>
+                    <i class="mdi mdi-dots-vertical"></i>
+                </button>
+
+                <lx-dropdown-menu>
+                    <ul>
+                        <li><a class="dropdown-link">Action</a></li>
+                        <li><a class="dropdown-link">Another action</a></li>
+                        <li><a class="dropdown-link">Something else here</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-link dropdown-link--is-header">Header</a></li>
+                        <li><a class="dropdown-link">Separated link</a></li>
+                    </ul>
+                </lx-dropdown-menu>
+            </lx-dropdown>
+        </div>
+    </header>
+
+    <table class="data-table">
+        <thead>
+        <tr class="data-table__selectable-row">
+            <th></th>
+            <th>Dessert (100g serving)</th>
+            <th>Calories</th>
+            <th>Fat (g)</th>
+            <th class="data-table__sortable-cell data-table__sortable-cell--desc">Carbs (g)</th>
+            <th>Protein (g)</th>
+            <th>Sodium (mg)</th>
+            <th>
+                <i class="mdi mdi-comment-text"></i>
+                <span>Comments</span>
+            </th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr class="data-table__selectable-row data-table__selectable-row--is-selected">
+            <td></td>
+            <td>Frozen yogurt</td>
+            <td>159</td>
+            <td>6.0</td>
+            <td>24</td>
+            <td>4.0</td>
+            <td>87</td>
+            <td>Lorem ipsum</td>
+        </tr>
+
+        <tr class="data-table__selectable-row">
+            <td></td>
+            <td>Ice cream sandwich</td>
+            <td>237</td>
+            <td>9.0</td>
+            <td>37</td>
+            <td>4.3</td>
+            <td>129</td>
+            <td>Lorem ipsum</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<script>
+    // Main angular module
+    angular.module('app', ['lumx']);
+
+</script>
+</body>
+</html>
