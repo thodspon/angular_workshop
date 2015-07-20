@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LumX Template</title>
+
+    <link href="../vendor/lumx/dist/lumx.css" rel="stylesheet">
+    <link href="../vendor/mdi/css/materialdesignicons.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700"> -->
+
+    <script src="../vendor/jquery/dist/jquery.js"></script>
+    <script src="../vendor/velocity/velocity.js"></script>
+    <script src="../vendor/moment/min/moment-with-locales.js"></script>
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="../vendor/lumx/dist/lumx.js"></script>
+
+    <script src="../vendor/highcharts/highcharts.js"></script>
+    <script src="../vendor/highcharts-ng/dist/highcharts-ng.js"></script>
+    <script src="./js/1_test-chartCrtl.js"></script>
+
+</head>
+<body ng-controller="WelcomeCtrl">
+
+<div flex-container="row" flex-gutter="24">
+
+    <div class="card p+" flex-item>
+        <highchart config="barConfig"></highchart>
+    </div>
+
+    <div class="card p+" flex-item>
+        <highchart config="lineConfig"></highchart>
+    </div>
+
+</div>
+<br><br>
+<div flex-container="row" flex-gutter="24">
+
+    <div class="card p+" flex-item>
+        <highchart config="columnConfig"></highchart>
+    </div>
+
+    <div class="card p+" flex-item>
+        <highchart config="pieConfig"></highchart>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

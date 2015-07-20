@@ -22,6 +22,9 @@
     "angular-ui-router": "~0.2.15",
     "angular-route": "~1.4.3",
     "lumx": "~0.3.68",
-    "mdi": "~1.1.70"
+    "mdi": "~1.1.70",
+    "highcharts": "~4.1.7",
+    "highcharts-ng": "~0.0.8",
+    "angular-ui-map": "~0.5.0"
   }
 }
