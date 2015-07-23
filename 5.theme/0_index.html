@@ -56,7 +56,30 @@
 
 
         </div>
-        <div flex-item="10" flex-item-order="3"><div class="p+ bgc-blue-500">ระบบข้อมูล Angular Lumx</div></div>
+        <div flex-item="10" flex-item-order="3"><div class="p+ bgc-blue-500">ระบบข้อมูล Angular Lumx</div>
+            <div class="mt++">
+                <div flex-item>
+                    <form>
+                        <lx-text-field label="First and last name" fixed-label="true" icon="account">
+                            <input type="text" ng-model="textFields.fixedFirstName">
+                        </lx-text-field>
+
+                        <lx-text-field label="Phone number" fixed-label="true" icon="phone">
+                            <input type="text" ng-model="textFields.fixedLastName">
+                        </lx-text-field>
+
+                        <lx-text-field label="Email address" fixed-label="true" icon="email">
+                            <input type="email" ng-model="textFields.fixedEmail">
+                        </lx-text-field>
+
+                        <lx-text-field label="Location" fixed-label="true" icon="city">
+                            <input type="text" ng-model="textFields.fixedAdress">
+                        </lx-text-field>
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
 
